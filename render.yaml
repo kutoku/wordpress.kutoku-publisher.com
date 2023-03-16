@@ -14,6 +14,8 @@ services:
   envVars:
   - key: PORT
     value: 80
+  - key: WORDPRESS_TABLE_PREFIX
+    value: kutoku_publisher_
   - key: WORDPRESS_DB_HOST
     fromService:
       name: wordpress-mysql
